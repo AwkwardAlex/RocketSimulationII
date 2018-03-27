@@ -1,7 +1,7 @@
 package utils;
 
 import engines.EngineSet;
-import fuel.tanks.TankSet;
+import fuel_tanks.TankSet;
 
 public class CompareSize {
 

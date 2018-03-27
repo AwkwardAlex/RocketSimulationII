@@ -17,4 +17,8 @@ public class ScannerUtil {
     public static String getString() {
         return getScanner().nextLine();
     }
+
+    public static int getInt() {
+        return getScanner().nextInt();
+    }
 }

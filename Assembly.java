@@ -1,5 +1,4 @@
-import fuel.tanks.TankSet;
-import engines.EngineSet;
+import fuel_tanks.TankSet;
 import utils.CompareSize;
 import utils.UserInput;
 
@@ -13,5 +12,12 @@ public class Assembly  {
         input.getCabinInput();
         input.getEngineInput();
         comparison.fitTank();
+        input.getNumberOfEngines();
+        input.getDestInput();
+    }
+
+    public double fuelCapacity() {
+        double totalFuel = TankSet.getId(UserInput.chosenTank).getCapacity() * UserInput.engineNumber;
+        return totalFuel;
     }
 }

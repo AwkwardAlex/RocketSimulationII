@@ -1,4 +1,4 @@
-package fuel.tanks;
+package fuel_tanks;
 
 public enum TankSet {
     MINIMAL(1, "Minimal", 5, 5, 300, 100),

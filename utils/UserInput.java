@@ -3,7 +3,7 @@ package utils;
 import locations.Destination;
 import cabins.CabinSet;
 import engines.EngineSet;
-import fuel.tanks.TankSet;
+import fuel_tanks.TankSet;
 
 public class UserInput {
 
@@ -11,6 +11,7 @@ public class UserInput {
     public static int chosenCabin;
     public static int chosenTank;
     public static int choseEngine;
+    public static int engineNumber;
     public static int chosenPlanet;
     public void getCabinInput() {
         while (loopVar) {
@@ -63,6 +64,22 @@ public class UserInput {
         loopVar = true;
     }
 
+    public void getNumberOfEngines() {
+        while (loopVar) {
+            System.out.println("Please enter number of engines: ");
+            String num = ScannerUtil.getString();
+            engineNumber = Integer.parseInt(num);
+            if ((engineNumber >= 3) & (engineNumber <= 5)) {
+                System.out.println("You have chosen to have: " + engineNumber + " engines.");
+                loopVar = false;
+            }
+            if (loopVar == true) {
+                System.out.println("Please enter valid number of engines, from 3 to 5");
+            }
+        }
+        loopVar = true;
+    }
+
     public void getTankInput() {
         while (loopVar) {
             System.out.println("Please chose one of these fuel tank sets:");
@@ -101,6 +118,9 @@ public class UserInput {
                     chosenPlanet = x;
                     loopVar = false;
                 }
+            }
+            if (loopVar == true) {
+                System.out.println("Command not recognized, please try again");
             }
         }
     }
