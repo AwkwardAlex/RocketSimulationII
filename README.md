@@ -9,6 +9,8 @@ User has a choice to pick one of 5 parts:
 - engine (Raptor, Draco, Merlin, SuperDraco, Kestrel);
 - fuel tank (Minimal, Small, Medium, Large, Massive);
 
+To pick one of the parts, just type it's name.
+
 #### Start-up instructions:
 - clone the project ```git clone https://github.com/AwkwardAlex/RocketSimulationII.git```
 - navigate to java directory, by using ```cd RocketSimulationII/src/main/java```
