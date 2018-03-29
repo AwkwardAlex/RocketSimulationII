@@ -1,4 +1,4 @@
-package engines;
+package io.rocket.simulation.parts;
 
 public enum EngineSet {
 
@@ -6,7 +6,7 @@ public enum EngineSet {
     DRACO(2, "Draco", 2, 3, 370, 7, 40, 600),
     MERLIN(3, "Merlin", 3, 2, 400, 7, 45, 600),
     SUPERDRACO(4, "SuperDraco", 4, 4, 500, 9, 60, 1100),
-    KESTREL(5, "Kestrel", 4, 5, 800, 9, 70, 1400);
+    KESTREL(5, "Kestrel", 4, 5, 800, 9, 70, 1800);
 
     private String name;
     private int id, height, width, weight, power, fuelConsumption, tankSpace;

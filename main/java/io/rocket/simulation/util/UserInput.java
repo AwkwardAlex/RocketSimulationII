@@ -1,13 +1,13 @@
-package main.java.utils;
+package io.rocket.simulation.util;
 
-import locations.Destination;
-import cabins.CabinSet;
-import engines.EngineSet;
-import fuel_tanks.TankSet;
+import io.rocket.simulation.locations.Destination;
+import io.rocket.simulation.parts.CabinSet;
+import io.rocket.simulation.parts.EngineSet;
+import io.rocket.simulation.parts.TankSet;
 
 public class UserInput {
 
-    public boolean loopVar = true;
+    private boolean loopVar = true;
     public static int chosenCabin;
     public static int chosenTank;
     public static int choseEngine;
@@ -31,7 +31,7 @@ public class UserInput {
                     loopVar = false;
                 }
             }
-            if (loopVar == true) {
+            if (loopVar) {
                 System.out.println("Command not recognized, please try again");
             }
         }
@@ -57,7 +57,7 @@ public class UserInput {
                     loopVar = false;
                 }
             }
-            if (loopVar == true) {
+            if (loopVar) {
                 System.out.println("Command not recognized, please try again");
             }
         }
@@ -73,7 +73,7 @@ public class UserInput {
                 System.out.println("You have chosen to have: " + engineNumber + " engines.");
                 loopVar = false;
             }
-            if (loopVar == true) {
+            if (loopVar) {
                 System.out.println("Please enter valid number of engines, from 3 to 5");
             }
         }
@@ -98,7 +98,7 @@ public class UserInput {
                     loopVar = false;
                 }
             }
-            if (loopVar == true) {
+            if (loopVar) {
                 System.out.println("Command not recognized, please try again");
             }
         }
@@ -119,7 +119,7 @@ public class UserInput {
                     loopVar = false;
                 }
             }
-            if (loopVar == true) {
+            if (loopVar) {
                 System.out.println("Command not recognized, please try again");
             }
         }

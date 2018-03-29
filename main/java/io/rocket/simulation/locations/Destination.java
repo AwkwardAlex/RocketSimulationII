@@ -1,10 +1,11 @@
-package locations;
+package io.rocket.simulation.locations;
 
 public enum Destination {
     SPACE(1, 1, "Space"),
-    MOON(2, 38, "Moon"),
-    MARS(3, 546, "Mars"),
-    SUN(4, 1490, "Sun");
+    MOON(2, 384, "Moon"),
+    MARS(3, 54600, "Mars"),
+    SUN(4, 149000, "Sun"),
+    JUPITER(5, 600000, "Jupiter");
 
     private int id, distance;
     private String name;
@@ -18,15 +19,6 @@ public enum Destination {
     public static Destination getId(int num) {
         for (Destination planet : Destination.values()) {
             if (planet.id == num) {
-                return planet;
-            }
-        }
-        return null;
-    }
-
-    public static Destination getDestName(String name) {
-        for (Destination planet : Destination.values()) {
-            if (planet.name.equalsIgnoreCase(name)) {
                 return planet;
             }
         }

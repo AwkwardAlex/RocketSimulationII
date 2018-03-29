@@ -1,11 +1,11 @@
-package cabins;
+package io.rocket.simulation.parts;
 
 public enum CabinSet {
-    ARCHIMEDES(1, "Archimedes", 2, 1, 500, 3),
-    AVENGER(2, "Avenger", 3, 3, 890, 4),
-    BEHEMOTH(3, "Behemoth", 5, 5, 1250, 6),
-    BLITZKRIEG(4, "Blitzkrieg", 1, 1, 300, 1),
-    ZENITH(5, "Zenith", 2, 2, 600, 2);
+    ARCHIMEDES(2, "Archimedes", 2, 1, 500, 3),
+    AVENGER(4, "Avenger", 3, 3, 890, 4),
+    BEHEMOTH(5, "Behemoth", 5, 5, 1250, 6),
+    BLITZKRIEG(1, "Blitzkrieg", 1, 1, 300, 1),
+    ZENITH(3, "Zenith", 2, 2, 600, 2);
 
     public String name;
     private int id, height, width, weight, capacity;

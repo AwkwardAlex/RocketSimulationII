@@ -1,4 +1,4 @@
-package main.java.utils;
+package io.rocket.simulation.util;
 import java.util.Scanner;
 
 public class ScannerUtil {

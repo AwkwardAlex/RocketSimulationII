@@ -1,4 +1,4 @@
-package fuel_tanks;
+package io.rocket.simulation.parts;
 
 public enum TankSet {
     MINIMAL(1, "Minimal", 5, 5, 300, 100),
@@ -31,6 +31,7 @@ public enum TankSet {
     public double getVolume() {
         return (Math.PI * Math.pow((width / 2), 2) * height);
     }
+
     public String getName() {
         return name;
     }
