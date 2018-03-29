@@ -31,6 +31,7 @@ public enum TankSet {
     public double getVolume() {
         return (Math.PI * Math.pow((width / 2), 2) * height);
     }
+
     public String getName() {
         return name;
     }

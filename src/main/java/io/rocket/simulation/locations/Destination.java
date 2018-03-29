@@ -25,15 +25,6 @@ public enum Destination {
         return null;
     }
 
-//    public static Destination getDestName(String name) {
-//        for (Destination planet : Destination.values()) {
-//            if (planet.name.equalsIgnoreCase(name)) {
-//                return planet;
-//            }
-//        }
-//        return null;
-//    }
-
     public int getDistance() {
         return distance;
     }
