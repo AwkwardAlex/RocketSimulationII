@@ -1,9 +1,9 @@
-package io.rocket.simulation;
+package rocket;
 
-import io.rocket.simulation.parts.CabinSet;
-import io.rocket.simulation.parts.EngineSet;
-import io.rocket.simulation.parts.TankSet;
-import io.rocket.simulation.util.UserInput;
+import rocket.parts.CabinSet;
+import rocket.parts.EngineSet;
+import rocket.parts.TankSet;
+import rocket.util.UserInput;
 
 public class Rocket {
 
@@ -24,7 +24,7 @@ public class Rocket {
         input.getDestInput();
     }
 
-    public double getFuelCapacity() {
+    public int getFuelCapacity() {
         return TankSet.getId(UserInput.chosenTank).getCapacity() * UserInput.engineNumber;
     }
 
@@ -34,7 +34,11 @@ public class Rocket {
                 + EngineSet.getId(UserInput.choseEngine).getWeight()));
     }
 
+    public int getTotalPower() {
+        return EngineSet.getId(UserInput.choseEngine).getPower() * UserInput.engineNumber * 82;
+    }
+
     public int getVelocity(){
-        return getWeight() / (EngineSet.getId(UserInput.choseEngine).getPower() * UserInput.engineNumber);
+        return getTotalPower() / getWeight();
     }
 }

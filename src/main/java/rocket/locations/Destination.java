@@ -1,4 +1,4 @@
-package io.rocket.simulation.locations;
+package rocket.locations;
 
 public enum Destination {
     SPACE(1, 1, "Space"),

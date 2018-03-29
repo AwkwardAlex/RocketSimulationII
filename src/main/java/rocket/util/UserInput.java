@@ -1,9 +1,9 @@
-package io.rocket.simulation.util;
+package rocket.util;
 
-import io.rocket.simulation.locations.Destination;
-import io.rocket.simulation.parts.CabinSet;
-import io.rocket.simulation.parts.EngineSet;
-import io.rocket.simulation.parts.TankSet;
+import rocket.locations.Destination;
+import rocket.parts.CabinSet;
+import rocket.parts.EngineSet;
+import rocket.parts.TankSet;
 
 public class UserInput {
 

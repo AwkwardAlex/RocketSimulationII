@@ -1,4 +1,4 @@
-package io.rocket.simulation.parts;
+package rocket.parts;
 
 public enum CabinSet {
     ARCHIMEDES(2, "Archimedes", 2, 1, 500, 3),

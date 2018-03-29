@@ -1,4 +1,4 @@
-package io.rocket.simulation;
+package rocket;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package io.rocket.simulation;
+package rocket;
 
-import io.rocket.simulation.util.ScannerUtil;
+import rocket.util.ScannerUtil;
 
 public final class Flight {
 

@@ -1,8 +1,8 @@
-package io.rocket.simulation;
+package rocket;
 
-import io.rocket.simulation.util.UserInput;
-import io.rocket.simulation.locations.Destination;
-import io.rocket.simulation.parts.EngineSet;
+import rocket.util.UserInput;
+import rocket.locations.Destination;
+import rocket.parts.EngineSet;
 
 public class Launch implements Navigation{
     Rocket rocketX = new Rocket();
@@ -12,7 +12,7 @@ public class Launch implements Navigation{
                 / EngineSet.getId(UserInput.choseEngine).getFuelConsumption() * rocketX.getVelocity() * 12)) {
             System.out.println("You will reach your destination.");
             System.out.println("You will reach escape velocity in " +
-                    (CosmicVelocity.ESCAPE_VELOCITY / rocketX.getVelocity() * 70) + " seconds.");
+                    (CosmicVelocity.ESCAPE_VELOCITY / rocketX.getVelocity() * 120) + " seconds.");
         } else {
             System.out.println("You will not reach your destination.");
         }

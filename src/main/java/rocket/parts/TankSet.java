@@ -1,4 +1,4 @@
-package io.rocket.simulation.parts;
+package rocket.parts;
 
 public enum TankSet {
     MINIMAL(1, "Minimal", 5, 5, 300, 100),
