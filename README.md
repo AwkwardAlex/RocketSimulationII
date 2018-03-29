@@ -18,6 +18,6 @@ User has a choice to pick one of 5 parts:
 - clone the project ```git clone https://github.com/AwkwardAlex/RocketSimulationII.git```
 - navigate to java directory, by using ```cd RocketSimulationII/src/main/java```
 - compile Main file, by using ```javac rocket/Main.java```
-- create manifest.mf file ```echo "Main-Class: rocket.Main" > manifest.mf
+- create manifest.mf file ```echo "Main-Class: rocket.Main" > manifest.mf```
 - create .jar file, by using ```jar cmf manifest.mf Main.jar *```
 - run Main.jar file, by ```java -jar Main.jar```
