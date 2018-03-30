@@ -7,21 +7,19 @@ import rocket.util.UserInput;
 
 public class Rocket {
 
-    UserInput input = new UserInput();
-
-    public void prepareRocket() {
-        input.getCabinInput();
-        input.getEngineInput();
+    public Rocket() {
+        UserInput.getUserInput().getCabinInput();
+        UserInput.getUserInput().getEngineInput();
         while (true) {
-            input.getTankInput();
+            UserInput.getUserInput().getTankInput();
             if (TankSet.getId(UserInput.chosenTank).getVolume() > EngineSet.getId(UserInput.choseEngine).getTankSpace()) {
                 System.out.println("Your fuel tank is bigger than tank space, please chose smaller fuel tank.");
             } else {
                 break;
             }
         }
-        input.getNumberOfEngines();
-        input.getDestInput();
+        UserInput.getUserInput().getNumberOfEngines();
+        UserInput.getUserInput().getDestInput();
     }
 
     public int getFuelCapacity() {

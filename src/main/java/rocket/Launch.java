@@ -5,9 +5,9 @@ import rocket.locations.Destination;
 import rocket.parts.EngineSet;
 
 public class Launch implements Navigation{
-    Rocket rocketX = new Rocket();
+
     public void launch() {
-        rocketX.prepareRocket();
+        Rocket rocketX = new Rocket();
         if (Destination.getId(UserInput.chosenPlanet).getDistance() <= (rocketX.getFuelCapacity()
                 / EngineSet.getId(UserInput.choseEngine).getFuelConsumption() * rocketX.getVelocity() * 12)) {
             System.out.println("You will reach your destination.");
