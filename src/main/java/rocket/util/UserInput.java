@@ -1,5 +1,6 @@
 package rocket.util;
 
+import com.sun.xml.internal.ws.api.pipe.Engine;
 import rocket.locations.Destination;
 import rocket.parts.CabinSet;
 import rocket.parts.EngineSet;
@@ -13,6 +14,15 @@ public class UserInput {
     public static int choseEngine;
     public static int engineNumber;
     public static int chosenPlanet;
+
+    public static UserInput userInput;
+
+    public static UserInput getUserInput() {
+        if (userInput == null) {
+            userInput = new UserInput();
+        }
+        return userInput;
+    }
     public void getCabinInput() {
         while (loopVar) {
             System.out.println("Please chose one of these cabin sets:");
@@ -41,13 +51,7 @@ public class UserInput {
         while (loopVar) {
             System.out.println("Please chose one of these engine sets:");
             for (int x = 1; x < EngineSet.values().length + 1; x++) {
-                System.out.println(x + ". " + EngineSet.getId(x).getName()
-                        + ", heigth: " + EngineSet.getId(x).getHeight()
-                        + ", width: " + EngineSet.getId(x).getWidth()
-                        + ", weight: " + EngineSet.getId(x).getWeight()
-                        + ", power: " + EngineSet.getId(x).getPower()
-                        + ", fuel consumption: " + EngineSet.getId(x).getFuelConsumption()
-                        + ", tank space: " + EngineSet.getId(x).getTankSpace());
+                EngineSet.getId(x).printStats(x);
             }
             String engineInput = ScannerUtil.getString();
             for (int y = 1; y < EngineSet.values().length + 1; y++) {
@@ -123,6 +127,7 @@ public class UserInput {
                 System.out.println("Command not recognized, please try again");
             }
         }
+        loopVar = true;
     }
 }
 

@@ -57,4 +57,14 @@ public enum EngineSet {
     public int getTankSpace() {
         return tankSpace;
     }
+
+    public void printStats(int id) {
+        System.out.println(id + ". " + EngineSet.getId(id).getName()
+                + ", heigth: " + EngineSet.getId(id).getHeight()
+                + ", width: " + EngineSet.getId(id).getWidth()
+                + ", weight: " + EngineSet.getId(id).getWeight()
+                + ", power: " + EngineSet.getId(id).getPower()
+                + ", fuel consumption: " + EngineSet.getId(id).getFuelConsumption()
+                + ", tank space: " + EngineSet.getId(id).getTankSpace());
+    }
 }
