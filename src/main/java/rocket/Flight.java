@@ -5,7 +5,7 @@ import rocket.util.ScannerUtil;
 public final class Flight {
 
     public void flightStatus() {
-        Launch rocketX = new Launch();
+        RocketX rocketX = new RocketX();
         while (true) {
             rocketX.launch();
             System.out.println("Press 1 if you want to construct new rocket\nOr press 0 to exit the program.");
