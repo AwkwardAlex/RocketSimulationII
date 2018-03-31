@@ -5,7 +5,8 @@ import rocket.locations.Destination;
 import rocket.parts.EngineSet;
 
 public class RocketX extends Rocket implements Navigation{
-
+    
+    RocketX rocketX = new RocketX();
     public void launch() {
         Rocket.getRocket();
         if (Destination.getId(UserInput.chosenPlanet).getDistance() <= (rocketX.getFuelCapacity()
