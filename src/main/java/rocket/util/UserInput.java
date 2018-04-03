@@ -1,6 +1,5 @@
 package rocket.util;
 
-import com.sun.xml.internal.ws.api.pipe.Engine;
 import rocket.locations.Destination;
 import rocket.parts.CabinSet;
 import rocket.parts.EngineSet;
@@ -27,11 +26,7 @@ public class UserInput {
         while (loopVar) {
             System.out.println("Please chose one of these cabin sets:");
             for (int x = 1; x < CabinSet.values().length + 1; x++) {
-                System.out.println(x + ". " + CabinSet.getId(x).getName()
-                        + ", heigth: " + CabinSet.getId(x).getHeight()
-                        + ", width: " + CabinSet.getId(x).getWidth()
-                        + ", weight: " + CabinSet.getId(x).getWeight()
-                        + ", capacity: " + CabinSet.getId(x).getCapacity());
+                CabinSet.getId(x).printStats(x);
             }
             String cabinInput = ScannerUtil.getString();
             for (int x = 1; x < CabinSet.values().length + 1; x++) {
@@ -88,11 +83,7 @@ public class UserInput {
         while (loopVar) {
             System.out.println("Please chose one of these fuel tank sets:");
             for (int x = 1; x < TankSet.values().length + 1; x++) {
-                System.out.println(x + ". " + TankSet.getId(x).getName()
-                        + ", heigth: " + TankSet.getId(x).getHeight()
-                        + ", width: " + TankSet.getId(x).getWidth()
-                        + ", weight: " + TankSet.getId(x).getWeight()
-                        + ", power: " + TankSet.getId(x).getCapacity());
+                TankSet.getId(x).printStats(x);
             }
             String tankInput = ScannerUtil.getString();
             for (int x = 1; x < TankSet.values().length + 1; x++) {

@@ -18,6 +18,7 @@ public enum CabinSet {
         this.weight = weight;
         this.capacity = capacity;
     }
+
     public static CabinSet getId(int num) {
         for (CabinSet set : CabinSet.values()) {
             if (set.id == num) {
@@ -45,5 +46,13 @@ public enum CabinSet {
 
     public int getCapacity() {
         return capacity;
+    }
+
+    public void printStats(int x) {
+        System.out.println(id + ". " + CabinSet.getId(id).getName()
+                + ", heigth: " + CabinSet.getId(id).getHeight()
+                + ", width: " + CabinSet.getId(id).getWidth()
+                + ", weight: " + CabinSet.getId(id).getWeight()
+                + ", power: " + CabinSet.getId(id).getCapacity());
     }
 }

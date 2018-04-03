@@ -19,6 +19,15 @@ public enum TankSet {
         this.weight = weight;
         this.capacity = capacity;
     }
+
+    public void printStats(int id) {
+        System.out.println(id + ". " + TankSet.getId(id).getName()
+                + ", heigth: " + TankSet.getId(id).getHeight()
+                + ", width: " + TankSet.getId(id).getWidth()
+                + ", weight: " + TankSet.getId(id).getWeight()
+                + ", capacity: " + TankSet.getId(id).getCapacity());
+    }
+
     public static TankSet getId(int num) {
         for (TankSet set : TankSet.values()) {
             if (set.id == num) {

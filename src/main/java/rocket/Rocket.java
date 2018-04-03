@@ -5,9 +5,9 @@ import rocket.parts.EngineSet;
 import rocket.parts.TankSet;
 import rocket.util.UserInput;
 
-public class Rocket {
+public abstract class Rocket {
 
-    public Rocket() {
+    public void getRocket() {
         UserInput.getUserInput().getCabinInput();
         UserInput.getUserInput().getEngineInput();
         while (true) {
