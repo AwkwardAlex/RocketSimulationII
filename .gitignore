@@ -1,4 +1,7 @@
 .idea/
 out/
 RocketSimulationII.iml
+pom.xml
+src/test
+src/main/resources
 

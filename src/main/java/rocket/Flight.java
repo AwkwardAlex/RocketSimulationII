@@ -10,8 +10,8 @@ public final class Flight {
             rocketX.launch();
             System.out.println("Press 1 if you want to construct new rocket\nOr press 0 to exit the program.");
             String userChoice = ScannerUtil.getString();
-            if (userChoice.equals("1")) {
-            } else if (userChoice.equals("0")) {
+            if ("1".equals(userChoice)) {
+            } else if ("0".equals(userChoice)) {
                 System.out.println("Exiting program, farewell!");
                 break;
             } else {
